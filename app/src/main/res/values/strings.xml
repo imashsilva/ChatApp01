@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ChatApp</string>
+    <string name="textView_txt">Chat App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email_txt">Email</string>
+    <string name="password_txt">Password</string>
+    <string name="btn_txt">Sign In</string>
+    <string name="sign_up_txt">Sign Up</string>
+    <string name="conform_password_txt">Conform Password</string>
 </resources>

@@ -1,14 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.SignUpFragment">
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".fragment.SignInFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="217dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/signup" />
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/signUpemailtxt"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="text"
+        android:drawableLeft="@drawable/attach_email_icon"
+        android:drawablePadding="4dp"
+        android:background="@drawable/edittext_background"
+        android:padding="8dp"
+        android:hint="@string/email_txt" />
+
+    <EditText
+        android:id="@+id/signUpPasswordtxt"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:drawableLeft="@drawable/password_icon"
+        android:drawablePadding="4dp"
+        android:background="@drawable/edittext_background"
+        android:padding="8dp"
+        android:hint="@string/password_txt" />
+
+    <EditText
+        android:id="@+id/signUpConformPasswordtxt"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:drawableLeft="@drawable/password_icon"
+        android:drawablePadding="4dp"
+        android:background="@drawable/edittext_background"
+        android:padding="8dp"
+        android:hint="@string/conform_password_txt" />
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/sign_up_txt"
+        android:textAllCaps="false"
+        app:cornerRadius="10dp"
+        android:backgroundTint="@color/blue_200" />
+
+</LinearLayout>
